@@ -1,0 +1,291 @@
+@import url('./globals/index.css');
+
+.home-body {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--background-color);
+    color: #fff;
+    padding-block: 1.5rem;
+}
+
+/* Hero content */
+.home-container {
+    padding: 1rem 1.7rem;
+}
+
+.home-hero {
+    background-image: url('../images/bike.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    position: relative;
+}
+
+.home-hero-content {
+    position: relative;
+}
+
+.home-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+    padding-bottom: 0.7rem;
+}
+
+nav>.logo h2 {
+    font-size: 1.5rem;
+}
+
+.menu-btn>button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+}
+
+.menu-btn span {
+    margin-right: 0.2rem;
+}
+
+ul {
+    display: none;
+}
+
+a {
+    color: #fff;
+}
+
+ul a {
+    transition: all 0.3s ease;
+    margin-left: 0.8rem;
+    display: inline-block;
+}
+
+ul a:hover {
+    color: var(--primary-color);
+}
+
+.list-ride-btn {
+    background: var(--primary-background);
+    padding:0.4rem 1.3rem;
+    border-radius: 5px;
+}
+
+.list-ride-btn:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.home-main-content {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.home-main-content h1,
+.home-main-content h1 span {
+    font-size: 1.25rem;
+    overflow: visible;
+}
+
+.home-main-content h2 {
+    font-size: 0.87rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.home-main-content h1 span {
+    border-bottom: 1px solid #fff;
+}
+
+
+.item-one {
+    position: relative;
+    flex: 2;
+    border-radius: 5px 5px 0 0;
+}
+
+.item-one>input {
+    padding-left: 2.5rem;
+    padding-block: 0.5rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.item-one>span {
+    position: absolute;
+    left: 10px;
+    bottom: 7px;
+    color: #bbbbbb;
+    font-size: 1.7rem;
+}
+
+.item-two {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    flex: 2;
+}
+
+.item-two div input {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+
+
+.item-two div {
+    flex: 1;
+}
+
+.item-three {
+    flex: 1;
+    background: var(--primary-background);
+    padding-block: 0.6rem;
+    border-radius: 0 0 5px 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.item-three:hover {
+    opacity: 0.9;
+}
+
+input {
+    border: 1px solid #c2c2c2;
+}
+
+.hero-carousel {
+    display: flex;
+    padding-top: 2.3rem;
+    gap: 1.1rem;
+}
+
+@media screen and (min-width:365px) {
+    .hero-carousel {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width:390px) {
+    .hero-carousel {
+       justify-content: center;
+    }
+}
+
+.hero-carousel .material-icons {
+    width: 37px;
+    height: 37px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.hero-carousel > div {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-message {
+    margin-left: 0.5rem;
+}
+
+/* Tablet View  */
+@media screen and (min-width:760px) {
+
+    .home-hero {
+        min-height: 500px;
+    }
+
+    .home-main-content {
+        padding-top: 2.5rem;
+    }
+
+    .home-main-content h1,
+    .home-main-content h1 span {
+        font-size: 2rem;
+    }
+
+    .home-flex {
+        max-width: 60%;
+        margin-inline: auto;
+    }
+
+    .hero-carousel {
+        gap: 2.5rem;
+     }
+}
+
+/* Desktop View  */
+@media screen and (min-width:950px) {
+
+    .home-hero {
+        min-height: 580px;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .home-container {
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    .home-main-content {
+        padding-top: 8rem;
+    }
+
+    .home-main-content h2 {
+        font-size: 1.3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .home-flex {
+        max-width: 100%;
+        padding-inline: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .item-one,
+    .item-one input {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .item-two div:nth-child(2) input {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .item-three {
+        margin-left: 0.6rem;
+        border-radius: 5px;
+    }
+
+    .hero-carousel .material-icons{
+        height: 55px;
+        width: 55px;
+     }
+
+     .hero-carousel {
+        padding-top: 7rem;
+        gap: 7rem;
+     }
+}
