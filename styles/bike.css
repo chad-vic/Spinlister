@@ -1,0 +1,328 @@
+@import url("./globals/index.css");
+
+.bike-body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background-color);
+  color: #fff;
+  padding-block: 0.5rem;
+}
+
+.bike-container {
+  padding: 0.6rem 1.7rem;
+}
+
+a {
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+}
+
+nav ul {
+  display: none;
+}
+
+nav span {
+  color: #fff;
+}
+
+nav ul a {
+  display: inline-block;
+  margin-left: 0.7rem;
+}
+
+.list-ride-btn {
+  padding: 0.4rem 1.3rem;
+  background: var(--primary-background);
+  border-radius: 0.3rem;
+}
+
+.list-ride-btn:hover {
+  opacity: 0.9;
+}
+
+.main-bg {
+  background-image: url("../images/bike2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.main-content {
+  position: relative;
+  background: #fff;
+  color: #33475b;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  padding-inline: 3rem;
+  box-shadow: 0 0px 8px 0 rgb(53 105 128 / 30%),
+    0 -6px 20px 0 rgb(165 200 213 / 41%);
+  /* bottom: 0; */
+}
+
+.center {
+  text-align: center;
+  font-weight: 600;
+}
+
+.center > strong {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bike-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bike-logo {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.bike-section {
+  margin-top: 3rem;
+}
+
+.bike-section h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.bike-section ul {
+  padding-inline: 2.5rem;
+}
+.bike-section li {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.bike-section a {
+  display: block;
+  text-align: center;
+  width: 150px;
+  margin: 1rem auto;
+  background: var(--primary-background);
+  padding: 0.7rem 0.9rem;
+  border-radius: 5px;
+}
+
+.contact-us {
+  margin-top: 4rem;
+}
+
+.contact-us h3 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-value {
+  margin-bottom: 0.7rem;
+}
+
+input {
+  background: #f5f8fa;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #cbd6e2;
+  margin-top: 0.4rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.bike-submit-btn {
+  background: var(--primary-background);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.bike-submit-btn:hover {
+  opacity: 0.9;
+}
+input[type="checkbox"] {
+  width: 20px;
+  margin-top: 0;
+}
+
+.bt-1,
+.bb-1 {
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+}
+
+.bt-1,
+.bb-1 {
+  padding-bottom: 1rem;
+}
+
+.about-card-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.about-card-flex .card-item > h3 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-card-flex .card-item p {
+  line-height: 1.5;
+}
+
+.protect-trust-content > p,
+.protect-grid p,
+.trust-grid p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.mb {
+  margin-bottom: 1.5rem;
+}
+
+.protect-grid,
+.trust-grid {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.protect-grid span,
+.trust-grid span {
+  width: 55px;
+  height: 55px;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.how-to-build > h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.how-to-build {
+  border-bottom: 1px solid rgb(255, 255, 255, 0.222);
+  padding-top: 1rem;
+}
+
+.trust-grid span {
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+}
+
+.trust-grid > div > h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.protect-grid h3 {
+  font-size: 1.111rem;
+  margin-bottom: 0.42rem;
+}
+
+.bike-feature {
+  padding-bottom: 1.5rem;
+}
+.feature-content h2 {
+  font-size: 1.5rem;
+  margin-block: 2rem;
+}
+
+.feature-list > div {
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-list > div span {
+  color: forestgreen;
+}
+.feature-list > div P {
+  font-size: 0.9rem;
+}
+
+.regular-text {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+label > span {
+  color: red;
+}
+
+@media screen and (min-width: 760px) {
+  .bike-container {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  .main-content {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .mw {
+    max-width: 400px;
+    margin-inline: auto;
+  }
+
+  .about-card-flex {
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .regular-text {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .feature-content {
+    max-width: 650px;
+    margin-inline: auto;
+  }
+}

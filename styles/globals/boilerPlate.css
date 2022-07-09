@@ -63,7 +63,8 @@ input {
 }
 
 footer {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgb(255, 255, 255, 0.2);
 }
 
 footer a {
@@ -112,7 +113,7 @@ footer .footer-two {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    gap: 17rem;
+    gap: 13rem;
   }
 }
 
@@ -121,4 +122,71 @@ footer .footer-two {
     display: flex;
     gap: 4rem;
   }
+}
+
+.sponsor-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.sponsor-flex > div > img {
+  width: 60px;
+}
+
+.mobile-modal {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  opacity: 0.95;
+  color: #fff;
+  z-index: 999;
+  padding: 0.5rem 1.5rem;
+  display: none;
+}
+
+.flex-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.4);
+}
+
+.flex-modal span {
+  color: white;
+}
+
+.mobile-nav {
+  padding-top: 1rem;
+}
+
+.mobile-nav ol li {
+  padding-block: 0.3rem;
+}
+
+.mobile-nav ol li:nth-child(1) a {
+  font-size: 2rem;
+}
+.mobile-nav ol li:nth-child(2) a {
+  font-size: 2.2rem;
+}
+.mobile-nav ol li:nth-child(3) a {
+  font-size: 1.6rem;
+}
+.mobile-nav ol li:nth-child(4) a {
+  font-size: 1.4rem;
+}
+
+.list-ride-mobile-btn {
+  background: var(--primary-background);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  padding-block: 0.7rem;
+  border-radius: 6px;
 }
