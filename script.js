@@ -27,13 +27,13 @@ backgroundBtns.forEach((btn) => {
         }
         else if (btn.classList.contains('surf')) {
             clearAll()
-            backgroundImage.style.backgroundImage = 'url(./images/bike2.jpg)'
+            backgroundImage.style.backgroundImage = 'url(./images/sup.jpg)'
             e.currentTarget.classList.add('active-bg')
             rentText.innerHTML = "sup"
         }
         else if (btn.classList.contains('snow')) {
             clearAll()
-            backgroundImage.style.backgroundImage = 'url(./images/bike3.jpg)'
+            backgroundImage.style.backgroundImage = 'url(./images/board.jpg)'
             e.currentTarget.classList.add('active-bg')
             rentText.innerHTML = "board"
         }

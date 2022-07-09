@@ -1,0 +1,409 @@
+@import url("./globals/index.css");
+
+.about-body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background-color);
+  color: #fff;
+  padding-block: 1.5rem;
+}
+
+.about-hero-content {
+  position: relative;
+}
+
+.about-container,
+.protect-trust {
+  padding: 1rem 1.7rem;
+}
+
+.about-hero {
+  background-image: url("../images/board.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 320px;
+  position: relative;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+.input-search {
+  position: relative;
+  display: none;
+}
+
+.input-search > input {
+  padding: 0.2rem 2rem;
+  border-radius: 7px;
+  background: #fff;
+  color: #464545;
+}
+
+.input-search > span {
+  position: absolute;
+  left: 8px;
+  bottom: 6px;
+  color: #bbbbbb;
+  font-size: 1.2rem;
+}
+
+nav > .logo h2,
+.flex-modal h2 {
+  font-size: 1.5rem;
+}
+
+.menu-btn > button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+}
+
+ul {
+  display: none;
+}
+
+a {
+  color: #fff;
+}
+
+ul a {
+  transition: all 0.3s ease;
+  margin-left: 0.8rem;
+  display: inline-block;
+}
+
+ul a:hover {
+  color: var(--primary-color);
+}
+
+.list-ride-btn {
+  background: var(--primary-background);
+  padding: 0.4rem 1.3rem;
+  border-radius: 5px;
+}
+
+.list-ride-btn:hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.about-main-content {
+  text-align: center;
+  padding: 3.5rem 0;
+}
+
+.about-main-content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-main-content h2 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.about-card-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.about-card-flex .card-item > h3 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-card-flex .card-item p {
+  line-height: 1.5;
+}
+
+.list-ride-btn2 {
+  background: var(--primary-background);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  padding-block: 0.7rem;
+  border-radius: 6px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.list-ride-btn2,
+.list-ride-mobile-btn a {
+  font-size: 1.2rem;
+}
+
+.list-ride-btn2:hover,
+.list-ride-mobile-btn:hover {
+  opacity: 0.9;
+}
+
+.protect-trust-bg {
+  background-image: url("../images/disaster.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 670px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-block: 5rem;
+}
+
+.protect-trust-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.protect-trust-content {
+  position: relative;
+  max-width: 90%;
+}
+
+.protect-trust-content > h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.protect-trust-content > h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.protect-trust-content > p,
+.protect-grid p,
+.trust-grid p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.mb {
+  margin-bottom: 1.5rem;
+}
+
+.protect-grid,
+.trust-grid {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.protect-grid span,
+.trust-grid span {
+  width: 55px;
+  height: 55px;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.how-to-build > h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.how-to-build {
+  border-bottom: 1px solid rgb(255, 255, 255, 0.222);
+  padding-top: 1rem;
+}
+
+.trust-grid span {
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  margin-top: 1.6rem;
+}
+
+.trust-grid > div > h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.protect-grid h3 {
+  font-size: 1.111rem;
+  margin-bottom: 0.42rem;
+}
+
+.br {
+  border-bottom: 1px solid rgb(255, 255, 255, 0.222);
+  padding-block: 2rem;
+}
+
+.about-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding-block: 1rem;
+}
+
+.about-btn div {
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0;
+  border-radius: 6px;
+}
+
+.about-btn div > a {
+  width: 100%;
+}
+
+.about-btn div:hover {
+  opacity: 0.8;
+}
+
+.about-btn div:nth-child(1) {
+  background: var(--primary-background);
+}
+
+.about-btn div:nth-child(2) {
+  background: #444;
+}
+
+/* Tablet View  */
+@media screen and (min-width: 760px) {
+  .about-hero {
+    min-height: 250px;
+  }
+
+  .mxw {
+    max-width: 63%;
+    margin-inline: auto;
+    padding: 2.4rem 0;
+  }
+
+  .list-ride-btn2 {
+    max-width: 60%;
+    margin-inline: auto;
+  }
+
+  .about-card-flex {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .protect-trust-content {
+    max-width: 40%;
+  }
+
+  .about-btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Desktop View  */
+@media screen and (min-width: 950px) {
+  .menu-btn {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-container,
+  .protect-trust {
+    width: 85%;
+    margin-inline: auto;
+  }
+
+  .input-search {
+    display: block;
+  }
+
+  .list-ride-btn2 {
+    max-width: 40%;
+  }
+
+  .about-btn {
+    max-width: 80%;
+    margin-inline: auto;
+    gap: 10rem;
+  }
+}
+
+.mobile-modal {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  opacity: 0.95;
+  color: #fff;
+  z-index: 999;
+  padding: 0.5rem 1.5rem;
+  display: none;
+}
+
+.flex-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.4);
+}
+
+.flex-modal span {
+  color: white;
+}
+
+.mobile-nav {
+  padding-top: 1rem;
+}
+
+.mobile-nav ol li {
+  padding-block: 0.3rem;
+}
+
+.mobile-nav ol li:nth-child(1) a {
+  font-size: 2rem;
+}
+.mobile-nav ol li:nth-child(2) a {
+  font-size: 2.2rem;
+}
+.mobile-nav ol li:nth-child(3) a {
+  font-size: 1.6rem;
+}
+.mobile-nav ol li:nth-child(4) a {
+  font-size: 1.4rem;
+}
+
+.list-ride-mobile-btn {
+  background: var(--primary-background);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  padding-block: 0.7rem;
+  border-radius: 6px;
+}

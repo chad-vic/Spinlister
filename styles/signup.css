@@ -1,0 +1,136 @@
+@import url("./globals/index.css");
+
+.sign-body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background-color);
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+header {
+  width: 90%;
+  margin-inline: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+}
+
+header h2 {
+  font-size: 1.3rem;
+}
+
+header span {
+  font-size: 1.5rem;
+}
+
+.sign-facebook {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.sign-container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.sign-facebook strong {
+  color: #7777;
+  font-size: 0.77rem;
+  font-weight: bold;
+}
+
+.sign-facebook div {
+  max-width: 360px;
+  text-align: start;
+}
+.sign-facebook a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: #3b5998;
+  padding: 0.7rem 0;
+  color: white;
+  border-radius: 6px;
+}
+
+input {
+  color: #ddd;
+  background: #444;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.forgot-password {
+  text-align: end;
+  margin: 0.4rem 0;
+}
+
+.forgot-password a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.form-value {
+  margin-bottom: 0.6rem;
+}
+
+.form-value > span {
+  font-size: 0.9rem;
+}
+button {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.7rem;
+  width: 100%;
+  margin: 0.6rem 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover,
+.sign-up a:hover {
+  opacity: 0.8;
+}
+
+.sign-up {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.sign-up span {
+  font-size: 1rem;
+}
+.sign-up a {
+  font-size: 0.99rem;
+  color: var(--primary-color);
+}
+
+.user-image {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+.user-image span {
+  color: #ddd;
+  font-size: 3rem;
+}
+
+/* Tablet View and desktop  */
+@media screen and (min-width: 760px) {
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  header span {
+    font-size: 1.4rem;
+  }
+
+  .sign-container {
+    max-width: 450px;
+  }
+}
