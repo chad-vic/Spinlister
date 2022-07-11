@@ -12,6 +12,30 @@
     />
   </head>
   <body>
+    <div class="mobile-modal">
+      <div class="flex-modal">
+        <div class="logo">
+          <h2>Logo</h2>
+        </div>
+
+        <div class="close-modal">
+          <button class="close-modal-btn">
+            <span class="material-icons"> close </span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav">
+        <ol>
+          <li><a href="./search.html">Search</a></li>
+          <li><a href="./about.html">How It Works</a></li>
+          <li><a href="./signup.html">Sign Up</a></li>
+          <li><a href="./signin.html">Sign In</a></li>
+        </ol>
+        <div class="list-ride-mobile-btn">
+          <a href="./list.html">List a Ride</a>
+        </div>
+      </div>
+    </div>
     <div class="list-body">
       <header>
         <div class="header list-container">
@@ -31,11 +55,342 @@
             </ul>
           </nav>
 
-          <div class="menu-btn">
+          <div class="menu-btn open-home-modal-btn">
             <span class="material-icons"> menu </span>
           </div>
         </div>
       </header>
+      <main class="list-main-content list-container">
+        <div class="list-grid grid-one">
+          <h2>List a Ride</h2>
+          <h3>
+            Spinlister lets you make money renting out your Bike, Surfboard, or
+            Snowboard.
+          </h3>
+          <h4>RIDE TYPE</h4>
+          <div class="list-flex">
+            <div>
+              <span class="material-icons"> pedal_bike </span>
+              <div>Bikes</div>
+            </div>
+
+            <div>
+              <span class="material-icons"> surfing </span>
+              <div>Surf</div>
+            </div>
+
+            <div>
+              <span class="material-icons"> downhill_skiing </span>
+              <div>Snow</div>
+            </div>
+          </div>
+          <h4>PHOTOS</h4>
+          <div class="upload">
+            <div class="upload-content">
+              <span class="material-icons">photo</span>
+              <h3>Add some Photos</h3>
+              <p>
+                Renters love to see lots of photos that showcase your ride and
+                make them want to ride it
+              </p>
+              <button>Add a Photos</button>
+            </div>
+          </div>
+          <div class="strong">
+            <strong
+              >Must be at least 1200px by 800px and no more than 6000px by
+              6000px. Jpg and Png only.</strong
+            >
+          </div>
+          <h4>RIDE DESCRIPTION</h4>
+          <div class="input-value">
+            <label>Ride Title</label>
+            <div>
+              <input
+                type="text"
+                class="ride-title-input"
+                placeholder="Like 'Black Bessie'"
+              />
+            </div>
+          </div>
+          <div class="input-value">
+            <label>Ride Description</label>
+            <div>
+              <textarea
+                placeholder="Is it unique ? Does it has any special parts ? Renters have to know why the should rent it."
+              ></textarea>
+            </div>
+          </div>
+          <h4>Price</h4>
+          <p>
+            Lower prices bring more frequent requests & longer rentals. You can
+            change your prices at any time.
+          </p>
+          <div class="price">
+            <div class="form">
+              <div class="input-flex">
+                <input type="number" placeholder="0" />
+                <span>/hour</span>
+              </div>
+              <p>Rentals 4 hours or longer are charged at the daily rate</p>
+              <div class="input-flex">
+                <input type="number" placeholder="0" />
+                <span>/day</span>
+              </div>
+              <div class="input-flex">
+                <input type="number" placeholder="0" />
+                <span>/week</span>
+              </div>
+              <p>An 8 day rental is charged 1 week and 1 day</p>
+            </div>
+            <div class="suggest-price">
+              <h3>Price Suggestions</h3>
+              <p>
+                You choose your rental prices, but based on past rentals of this
+                type, we think these are a good starting point.
+              </p>
+              <p>Bike</p>
+              <h4>$7/hour</h4>
+              <h4>$20/day</h4>
+              <h4>$100/week</h4>
+            </div>
+          </div>
+          <h4>MEETING LOCATION</h4>
+          <p>
+            This address should be the best approximate location for meeting
+            with a renter.
+          </p>
+          <div class="meeting">
+            <div class="meeting-form">
+              <div class="m-input">
+                <label class="block">Country</label>
+                <select class="w-30">
+                  <option>United States</option>
+                </select>
+              </div>
+              <div class="m-input">
+                <label>Address</label>
+                <div>
+                  <input type="text" placeholder="eg 123 Maint ST." />
+                </div>
+              </div>
+
+              <div class="m-flex">
+                <div class="m-input flex-1">
+                  <label>City</label>
+                  <div>
+                    <input type="text" placeholder="Chicago" />
+                  </div>
+                </div>
+                <div class="m-input flex-2">
+                  <label>State</label>
+                  <div>
+                    <input type="text" placeholder="Illinois" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="m-input">
+                <label>Zipcode</label>
+                <div>
+                  <input type="number" placeholder="eg.1234" class="w-20" />
+                </div>
+              </div>
+              <div class="m-input">
+                <label>Neighborhood or Cross Streets</label>
+                <div>
+                  <input
+                    type="address"
+                    placeholde="eg.Fisherman's Wharf"
+                    class="w-70"
+                  />
+                </div>
+              </div>
+
+              <div class="location">
+                <div class="map-1">
+                  <h3>The location of your listing</h3>
+                  <div class="large-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11485274.103371276!2d-127.4835408215114!3d45.34836820867771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53412b9c2d7b8ad3%3A0xf571d658cf2a6c18!2sMontana%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2scm!4v1657495051348!5m2!1sfr!2scm"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                  <p>
+                    The exact meeting address is only shown to renters when you
+                    have accepted their rental and they have confirmed and paid.
+                  </p>
+                </div>
+                <div class="map-2">
+                  <h3>What the public sees</h3>
+                  <div class="small-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11485274.103371276!2d-127.4835408215114!3d45.34836820867771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53412b9c2d7b8ad3%3A0xf571d658cf2a6c18!2sMontana%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2scm!4v1657495051348!5m2!1sfr!2scm"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Willing to Deliver?</h3>
+              <p class="s-mt">
+                You can always decline to deliver for any reason
+              </p>
+              <div class="radio-btn">
+                <input type="radio" />
+                <span>No</span>
+              </div>
+              <div class="radio-btn">
+                <input type="radio" />
+                <span>Yes, if I'm available and it's not too far</span>
+              </div>
+
+              <div class="submit-btn">
+                <button class="s-btn1">List a Ride</button>
+                <button class="s-btn2">Save & Finish later</button>
+              </div>
+              <p class="s-fs">
+                We look at every single ride after it's listed. Please allow a
+                few hours for us to review your ride and approve it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-grid grid-two">
+          <h2>Listing is Totally Free</h2>
+          <p>
+            It is completely free to list your ride on Spinlister. We only make
+            money when you do, we take a 17.5% fee on any rentals.
+          </p>
+          <h2>The Spinlister Guarantee</h2>
+          <p>
+            Your ride is safe with us: we guarantee the safety of your bike up
+            to $1,000, your surfboard or SUP up to $1,000 and your skis or
+            snowboard up to $1,000. <a href="./about.html">Learn More</a>
+          </p>
+          <div class="small">
+            <small
+              >The guarantee is valid in the United States, Canada, Germany,
+              United Kingdom, Ireland, Spain, Italy, Portugal, France,
+              Netherlands, Switzerland, Belgium, Sweden, Denmark, Norway, South
+              Korea, Austria, Japan, New Zealand, Australia, Israel, Croatia,
+              Singapore, Iceland, and Finland only.</small
+            >
+          </div>
+          <h2>Verification Tools</h2>
+          <p>
+            Spinlister gives renters simple Facebook, Twitter, Mobile, and
+            Credit Card verification to ensure you are only renting to
+            trustworthy renters.
+          </p>
+          <h2>Your Ride, Your Schedule</h2>
+          <p>
+            You can accept or decline rental requests if you are busy or you
+            can't make the rental work. No sweat! Just be sure to decline so
+            your response rate doesn't drop.
+          </p>
+          <h2>Quick & Easy Payment</h2>
+          <p>
+            Renters pay securely through Spinlister and you are paid via PayPal
+            or Check within 10 days after the rental ends
+          </p>
+        </div>
+      </main>
+
+      <footer class="list-container">
+        <div class="footer-item footer-one">
+          <section>
+            <h3>Download Apps</h3>
+            <div>
+              <a href="#">
+                <img src="./images/apple.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./images/android.png" alt="" />
+              </a>
+            </div>
+          </section>
+          <section>
+            <h3>Rent a Ride</h3>
+            <div>
+              <a href="#">Renter FAQ</a>
+              <a href="#">Bike Rentals</a>
+              <a href="#">Surf Rentals</a>
+              <a href="#">Snow Rentals</a>
+            </div>
+          </section>
+          <section>
+            <h3>List a Ride</h3>
+            <div>
+              <a href="#"> Lister FAQ</a>
+              <a href="#">Spinlister Guarantee</a>
+              <a href="#">Bike Shop Rental Software</a>
+            </div>
+          </section>
+          <section>
+            <h3>About</h3>
+            <div>
+              <a href="#"> How It Works</a>
+              <a href="#">Spinlister Blog</a>
+              <a href="#">Help</a>
+            </div>
+          </section>
+          <section>
+            <h3>Connect</h3>
+            <div>
+              <div class="flex-icons">
+                <span class="material-icons">facebook</span>
+                <a href="#" class="flex-icons">
+                  <span>Twitter</span>
+                </a>
+              </div>
+              <div class="flex-icons">
+                <span class="material-icons">photo</span>
+                <a href="#" class="flex-icons">
+                  <span>Instagram</span>
+                </a>
+              </div>
+              <div class="flex-icons">
+                <span class="material-icons">facebook</span>
+                <a href="#">
+                  <span>Facebook</span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="footer-item footer-two">
+          <h3>© 2022 Spinlister</h3>
+          <div>
+            <a href="#">New York</a>
+            <a href="#">San Francisco</a>
+            <a href="#">Portland</a>
+            <a href="#">Los Angeles</a>
+            <a href="#">London</a>
+            <a href="#">Amsterdam</a>
+            <a href="#">Boston</a>
+            <a href="#">Santa Monica</a>
+            <a href="#">Denver</a>
+            <a href="#">Chicago</a>
+            <a href="#">Seattle</a>
+            <a href="#"> MiamiBrooklyn</a>
+            <a href="#">Austin</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#"> Terms of Use</a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./script.js"></script>
   </body>

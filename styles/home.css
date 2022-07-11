@@ -358,6 +358,7 @@ input {
   width: auto;
   height: auto;
   position: relative;
+  cursor: pointer;
 }
 
 .inner-grid::before {

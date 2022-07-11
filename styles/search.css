@@ -1,0 +1,247 @@
+@import url("./globals/index.css");
+
+header {
+  background: #161616;
+  position: sticky;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  z-index: 99;
+}
+
+a,
+span,
+.filter h3 {
+  color: #fff;
+}
+
+.menu-btn {
+  margin-top: 0.3rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul a {
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+nav ul a:hover {
+  opacity: 0.9;
+}
+
+.list-ride-btn {
+  background: var(--primary-background);
+  padding: 0.3rem 1.5rem;
+  border-radius: 5px;
+}
+
+.list-ride-btn:hover {
+  color: #fff;
+}
+
+.input-search {
+  position: relative;
+  margin-top: 0.2rem;
+}
+
+.input-search > input {
+  padding: 0.2rem 0.8rem;
+  border-radius: 7px;
+  background: #464545;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+aside {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 90;
+  padding: 0.6rem;
+  padding-bottom: 2rem;
+  background: var(--background-color);
+  overflow-y: auto;
+}
+
+.aside-top {
+  padding: 1rem;
+}
+
+.list-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.list-flex > div > span {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.search-input {
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+}
+
+.search-input input {
+  padding: 0.6rem 0.3rem;
+  border-radius: 6px;
+  margin-top: 0.4rem;
+}
+
+.input-value {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.filter,
+.filter > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter > div {
+  padding: 0.5rem 0;
+  gap: 0.5rem;
+}
+
+.aside-bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.search-item {
+  position: relative;
+}
+
+.search-item::before {
+  position: absolute;
+  content: " ";
+  inset: 0;
+  background: black;
+  opacity: 0.4;
+}
+
+.sub-grid {
+  position: absolute;
+  bottom: 7px;
+  left: 5px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0 1rem;
+  color: #fff;
+}
+
+.sub-grid h2 {
+  font-size: 1.5rem;
+}
+
+.user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+.user > img {
+  border-radius: 50%;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #464545;
+  color: aliceblue;
+  overflow: hidden;
+  display: none;
+}
+
+@media screen and (min-width: 451px) {
+  .list-flex > div > span {
+    font-size: 2rem;
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .menu-btn {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  .input-search {
+    margin-right: auto;
+    margin-left: 1.5rem;
+  }
+
+  .input-search > input {
+    padding-right: 3rem;
+  }
+
+  aside {
+    width: 55%;
+  }
+
+  .map {
+    display: block;
+  }
+
+  .list-flex {
+    justify-content: flex-start;
+  }
+
+  .filter h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  aside {
+    width: 45%;
+  }
+
+  .search-input {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+
+  .aside-bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -5,6 +5,7 @@ const openBtn = document.querySelector('.open-home-modal-btn')
 const rentText = document.querySelector('.bg-text')
 const backgroundImage = document.querySelector('.home-hero')
 const backgroundBtns = document.querySelectorAll('.bg-btn')
+const navigateBtns = document.querySelectorAll('.inner-grid')
 
 // open modal function
 openBtn.addEventListener('click', () => {
@@ -14,6 +15,13 @@ openBtn.addEventListener('click', () => {
 // close modal function
 closeBtn.addEventListener('click', () => {
     modal.style.display = "none"
+})
+
+// navigate
+navigateBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        window.location.href = "./search.html"
+    })
 })
 
 // background carousel

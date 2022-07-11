@@ -1,108 +1,436 @@
-@import url('./globals/index.css');
+@import url("./globals/index.css");
 
 .list-body {
-    width: 100%;
-    min-height: 100vh;
-    background: var(--background-color);
-    color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background-color);
+  color: #fff;
 }
 
 header {
-    background: #161616;
-    position: sticky;
-    inset: 0;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 0;
+  background: #161616;
+  position: sticky;
+  inset: 0;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .list-container {
-    width: 85%;
-    margin-inline: auto;
+  padding: 1rem 1.7rem;
 }
 
-
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.8rem;
 }
 
- .logo h2 {
-    font-size: 1.3rem;
+.logo h2 {
+  font-size: 1.3rem;
 }
 
 nav a {
-    color: #fff;
+  color: #fff;
 }
 
 nav ul a {
-    transition: all 0.3s ease;
-    margin-left: 0.5rem;
-    display: inline-block;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+  display: inline-block;
 }
 
 nav ul a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .list-ride-btn {
-    background: var(--primary-background);
-    padding:0.3rem 1.5rem;
-    border-radius: 5px;
+  background: var(--primary-background);
+  padding: 0.3rem 1.5rem;
+  border-radius: 5px;
+}
+
+.menu-btn {
+  margin-left: 1rem;
 }
 
 .list-ride-btn:hover {
-    color: #fff;
-    opacity: 0.9;
+  color: #fff;
+  opacity: 0.9;
 }
 
-
 .input-search {
-    position: relative;
+  position: relative;
 }
 
 .input-search > input {
-    padding: 0.2rem 2rem;
-    border-radius: 7px;
-    background: #464545;
-    color: #fff;
+  padding: 0.2rem 1.5rem;
+  border-radius: 7px;
+  background: #464545;
+  color: #fff;
 }
 
-
-.input-search >span {
-    position: absolute;
-    left: 8px;
-    bottom: 6px;
-    color: #bbbbbb;
-    font-size: 1.2rem;
+.input-search > span {
+  position: absolute;
+  left: 3px;
+  bottom: 6px;
+  color: #bbbbbb;
+  font-size: 1.3rem;
 }
 
-@media screen and (max-width:780px) {
-    nav {
-        display: none;
-    }
-
-    .menu-btn {
-        display: block;
-    }
+.list-main-content {
+  padding-top: 3rem;
 }
 
-@media screen and (min-width:781px) {
-      .menu-btn {
-        display: none;
-    }
+.grid-one > h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-one > h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.grid-one > h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #8888;
+}
+
+.list-flex {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.list-flex > div {
+  text-align: center;
+}
+
+.list-flex > div > span {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.upload {
+  padding: 3rem;
+  border: 3px dashed #8888;
+}
+
+.upload-content {
+  margin-inline: auto;
+  text-align: center;
+  color: #ddd;
+}
+
+.upload-content h3 {
+  margin: 0.5rem;
+}
+
+.upload-content button {
+  margin-top: 1rem;
+  background: #888;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+
+.strong {
+  margin-bottom: 1rem;
+}
+
+.strong strong {
+  font-size: 0.7rem;
+}
+
+.input-value {
+  margin-top: 1.3rem;
+}
+
+.input-value input,
+textarea {
+  padding: 0.6rem;
+  border-radius: 6px;
+  margin-top: 0.4rem;
+}
+
+textarea {
+  padding-bottom: 10rem;
+  margin-bottom: 5rem;
+}
+
+.price {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  color: #ddd;
+}
+
+.form,
+.suggest-price {
+  flex: 1;
+}
+
+.input-flex {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-flex input {
+  flex: 0.8;
+  padding: 0.7rem 0.5rem;
+  border-radius: 6px;
+}
+
+.input-flex span {
+  flex: 0.2;
+}
+
+.form p {
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+.suggest-price {
+  margin: 0.5rem 0;
+}
+
+.suggest-price h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.suggest-price p {
+  font-size: 0.89rem;
+  margin-bottom: 0.5rem;
+}
+
+.suggest-price h4 {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-two h2 {
+  color: #ddd;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.m-input {
+  margin-bottom: 1.5rem;
+}
+
+.m-input input,
+select {
+  padding: 0.6rem 0.5rem;
+  border-radius: 6px;
+  margin-top: 0.4rem;
+}
+
+.m-flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.flex-1 {
+  flex: 0.7;
+}
+
+.flex-2 {
+  flex: 0.3;
+}
+
+.large-map {
+  width: 100%;
+  height: 300px;
+  background: #464545;
+}
+
+.small-map {
+  background: #464545;
+  width: 200px;
+  height: 200px;
+}
+
+.location {
+  color: #ddd;
+}
+
+.location h3 {
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.location p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.s-mt {
+  margin: 0.5rem 0;
+}
+
+.radio-btn {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+}
+
+.radio-btn > input {
+  width: 30px;
+}
+
+.submit-btn {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.submit-btn button {
+  padding: 0.7rem 2rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.s-btn1 {
+  background: var(--primary-background);
+}
+
+.s-btn2 {
+  background: #bbbbbb;
+}
+
+.submit-btn button:hover {
+  opacity: 0.9;
+}
+
+.s-fs {
+  font-size: 0.9rem;
+}
+
+.grid-two p {
+  color: #ddd;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+P > a {
+  color: var(--primary-color);
+}
+
+.small {
+  margin-bottom: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+  color: #888;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 451px) {
+  .list-flex > div > span {
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .upload-content {
+    width: 60%;
+  }
+
+  .ride-title-input {
+    width: 50%;
+  }
+
+  .w-30 {
+    width: 30%;
+  }
+
+  .w-20 {
+    width: 30%;
+  }
+
+  .w-70 {
+    width: 50%;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .submit-btn {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 781px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .list-container {
+    width: 85%;
+    margin-inline: auto;
+  }
+
+  header {
+    z-index: 999;
+  }
+
+  .list-main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .price {
+    display: flex;
+    gap: 0 8rem;
+  }
+
+  .location {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .large-map {
+    width: 500px;
+  }
 }
